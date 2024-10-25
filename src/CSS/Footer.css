@@ -1,0 +1,210 @@
+.footerStyle{ /*=== Div que Engloba o Footer ===*/
+    flex: 1;
+    padding-bottom: 3%;
+    padding-top: 5%;
+    background-color: #060f14;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: gray;
+}
+
+.footerSecMidiaSocial{ /*=== Section Das Footer Midias Socias===*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10%;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+    border-top: solid 1px rgba(255, 255, 255, 0.2);
+    width: 35%;
+    padding: 1%;
+} 
+
+.footerPagmentSec{ /*=== Section Dos Folhetos De Pagamentos ===*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+    border-top: solid 1px rgba(255, 255, 255, 0.2);
+    gap: 5%;
+    width: 30%;
+    margin-top: 3%; 
+    margin-bottom: 1%;
+    padding: 1%;
+} 
+
+.footerPagmentSec svg{ /*=== Icones De Pagamentos ===*/
+    width: 1.3vw;
+    height: 1.3vw;
+}
+
+.TitleNameFooter{ /*=== Titulo "Amateur-X" footer ===*/
+    font-family: "Bungee", sans-serif;
+    font-size: 1.3vw; 
+    text-align: center;
+    color: #ff073a;
+    text-shadow: 
+    -1px -1px 0 #94bcdc,  
+    1px -1px 0 #94bcdc,
+    -1px 1px 0 #94bcdc,
+    1px 1px 0 #94bcdc;
+}
+
+.footerSJM{ /*=== Section Que contem os GMAIL ===*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    width: 30%;
+    padding: 1%;
+}
+
+.FooterSJMTitle{ /*=== H1 dos "SUPORTE" "JURIDICO" "IMPRENSA" ===*/
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9vw;
+}
+
+.FooterSJMGMAILS{ /*=== tag P dos GMAIL ===*/
+    gap: 5px;
+    font-size: 0.7vw;
+    color: rgb(255, 255, 255, 0.8);
+}
+
+.footerCopyRight{ /*=== Section Do Copyright E Creditos ===*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+}
+
+.footerCopyRight h1{ /*=== tag H1 Direitos Autoriais ===*/
+    font-size: 0.8vw;
+}
+.footerCopyRight h3{ /*=== tag H3 CEO ===*/
+    font-size: 0.7vw;
+}
+.footerCopyRight div{ /*=== div dos CEO ===*/
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerCopyRight p{ /*=== tag p dos CEO ===*/
+    font-size: 0.85vw;
+    border-right: solid 1px rgb(255, 255, 255, 0.5);
+}
+
+/*===================================================FUNCIONAMENTO EM NOTEBOOKS ================================================*/
+  
+@media (max-width: 1200px) {
+
+    .footerSecMidiaSocial{ /*=== Section Das Footer Midias Socias===*/
+        gap: 3vw;
+        width: 40%;
+        padding: 1%;
+    } 
+
+    .footerPagmentSec{ /*=== Section Dos Folhetos De Pagamentos ===*/
+        gap: 5%;
+        width: 35%;
+        margin-top: 3%; 
+        margin-bottom: 1%;
+        padding: 1%;
+    } 
+
+    .footerPagmentSec svg{ /*=== Icones De Pagamentos ===*/
+        width: 2.5vw;
+        height: 2.5vw;
+    }
+    
+    .TitleNameFooter{ /*=== Titulo "Amateur-X" footer ===*/
+        font-size: 2vw; 
+    }
+
+    .FooterSJMTitle{ /*=== H1 dos "SUPORTE" "JURIDICO" "IMPRENSA" ===*/
+        font-size: 1.50vw;
+    }
+    
+    .FooterSJMGMAILS{ /*=== tag P dos GMAIL ===*/
+        font-size: 1.35vw;
+    }
+
+    .footerCopyRight h1, .footerCopyRight h3{ /*=== tag H1 Direitos Autoriais ===*/
+        font-size: 2vw;
+    }
+    
+    .footerCopyRight p{ /*=== tag p dos CEO ===*/
+        font-size: 1.5vw;
+    }
+
+}
+/*===================================================FUNCIONAMENTO EM Tablets ================================================*/
+    
+@media (max-width: 900px) {
+
+    .footerStyle{
+        padding-bottom: 10vh;
+    }
+
+    .footerSecMidiaSocial{ /*=== Section Das Footer Midias Socias===*/
+        gap: 5vw;
+        width: 65%;
+        padding: 2%;
+    } 
+
+    .footerPagmentSec{ /*=== Section Dos Folhetos De Pagamentos ===*/
+        gap: 5%;
+        width: 60%;
+        margin-top: 3%; 
+        margin-bottom: 1%;
+        padding: 1%;
+    } 
+
+    .footerPagmentSec svg{ /*=== Icones De Pagamentos ===*/
+        width: 5vw;
+        height: 5vw;
+    }
+    
+    .TitleNameFooter{ /*=== Titulo "Amateur-X" footer ===*/
+        font-size: 4vw; 
+    }
+
+    .footerSJM{ /*=== Section Que contem os GMAIL ===*/
+       flex-direction: column;
+       gap: 1.5vw;
+    }
+
+    .FooterSJMTitle{ /*=== H1 dos "SUPORTE" "JURIDICO" "IMPRENSA" ===*/
+        font-size: 3vw;
+    }
+    
+    .FooterSJMGMAILS{ /*=== tag P dos GMAIL ===*/
+        font-size: 2.5vw;
+    }
+    
+    .footerCopyRight{ /*=== Section Do Copyright E Creditos ===*/
+        margin-top: 2%;
+    }
+
+    .footerCopyRight h1, .footerCopyRight h3{ /*=== tag H1 Direitos Autoriais ===*/
+        font-size: 2.5vw;
+    }
+    
+    .footerCopyRight p{ /*=== tag p dos CEO ===*/
+        font-size: 2.5vw;
+        margin-top: 5%;
+    }
+}
+    
+/*===================================================FUNCIONAMENTO EM MOBILE================================================*/
+    
+@media (max-width: 500px) {  
+    .footerStyle{
+        padding-bottom: 10vh;
+    }
+}
+

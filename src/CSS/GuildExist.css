@@ -1,0 +1,502 @@
+.divGlobalGuild{ /*=== div que pertence ao componente Guild.jsx ===*/
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.divGuildContainer{ /*=== div que engloba o layout da Guild ===*/
+    background-color: rgba(16, 28, 36, 0.430);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*=============================================================================================================================*/
+
+.guildLayoutLargeContainer { /*=== div que engloba o layout da Guild ===*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(to right, red 50%, lightblue 50%) 1;
+}
+
+.secHeaderGuildLayout{ /*=== section Header Guild layout ===*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    margin-top: 1%;
+}
+  
+.alignHeaderOneGuildLayout { /*=== Alinhamento do nome da gulda e da imagem ===*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    margin-left: 5%;
+    gap: 15px;
+    flex: 0.5;
+}
+
+.alignHeaderTwoGuildLayout { /*=== Alinhamento da mensagem e setings da gulda ===*/
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    margin-right: 5%;
+    gap: 10px;
+    flex: 0.5;
+}
+
+.alignHeaderOneGuildLayout img{ /*=== Imagem Da Guilda ===*/
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 50%;
+    height: 100%;
+}
+
+.alignHeaderOneGuildLayout h1 { /*=== Nome Da Guilda ===*/
+    text-align: center;
+    color: #ff073a;
+    font-size: 2.5vw;
+    font-weight: bold;
+    text-shadow: 
+    -1px -1px 0 #94bcdc,  
+    1px -1px 0 #94bcdc,
+    -1px 1px 0 #94bcdc,
+    1px 1px 0 #94bcdc;
+}
+
+.btnAlignHeaderThreeGuildLayout{ /*=== botao de setting e mensagens Da Guilda ===*/
+    background-color: black;
+    border: solid 1px rgb(255, 255, 255, 0.5);
+    width: 2vw;
+    height: 2vw;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.btnAlignHeaderThreeGuildLayout:hover { /*=== botao de setting e mensagens Da Guilda ===*/
+    transform: scale(1.1);
+}
+
+.btnAlignHeaderThreeGuildLayout svg{ /*=== botao de setting e mensagens Da Guilda ===*/
+    color: white;
+    font-size: 1.3vw;
+    text-shadow: 
+    -1px -1px 0 #94bcdc,  
+    1px -1px 0 #94bcdc,
+    -1px 1px 0 #94bcdc,
+    1px 1px 0 #94bcdc;
+}
+
+.divCarouselBtns{ /*=== div dos carrosel ===*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    flex: 1;
+}
+
+.divCarouselBtns button{ /*=== botoes dos carrosel ===*/
+    background-color: transparent;
+    border: none;
+}
+
+.divCarouselBtns button svg{ /*=== svg dos botoes dos carrosel ===*/
+    color: white;
+    font-size: 1vw;
+}
+
+.divCaroselSpans{ /*=== span dos carrosel ===*/
+    display: flex;
+    gap: 10px;
+}
+
+.divCaroselSpans .svgDecline { /*=== span Desativado dos carrosel ===*/
+    color: #ffffff;
+    font-size: 2vw;
+    border-radius: 15px;
+    background-color: transparent;
+    border: solid 1px white;
+    padding: 10%;
+    transition: color 0.3s;
+}
+  
+.divCaroselSpans .active { /*=== span Ativado dos carrosel ===*/
+    color: #ffffff;
+    font-size: 2.25vw;
+    border-radius: 15px;
+    background-color: #2a0030;
+    border: solid 1px white;
+    padding: 7.5%;
+    transition: color 0.3s;
+}
+
+.carouselGuildLayoutContainer{ /*=== div que engloba o carrosel da guilda ===*/
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.carouselSection { /*=== section do carrosel da guilda ===*/
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    border-radius: 15px;
+}
+
+.carouselCardsContainer { /*=== div carrosel container ===*/
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+  
+.cardWrapper { /*=== alinhamento de div de lado ===*/
+    display: flex;
+    gap: 1%;
+    height: 40%;
+    padding: 1%;
+}
+
+.cardWrapperTwo{ /*=== alinhamento de div de lado dois ===*/
+    padding: 1%;
+    height: 60%;
+}
+
+.cardPlayerOfCap{ /*=== card do capitao e players ===*/
+    background-color:rgb(12, 0, 0, 0.30);
+    border: solid 1px white;
+    border-radius: 10px;
+    height: 100%;   
+    padding-left: 0.5%;
+    padding-top: 0.5%;
+}
+
+.cardPlayerOfCap h1{ /*=== Estilo Do Nome Do Capitao ===*/
+    font-size: 1.5vw;
+    display: flex;
+    gap: 2%;
+}
+
+.cardPlayerOfCap h3{ /*=== Estilo Do Nome Do Capitao ===*/
+    margin-top: 1%;
+    font-size: 1.2vw;
+    display: flex;
+    gap: 2%;
+}
+
+.divPOCall{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.divAddMember{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+}
+
+.inputAddMember{
+    width: 75%;
+    height: 60px;
+    padding: 2%;
+    font-size: 1vw;
+    border: 1px solid #94bcdc;
+    border-radius: 10px;
+    background-color: #101c24;
+    color: white;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.btnAddMember{
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;
+    margin-left: 2%;
+    font-size: 2vw;
+    border: none;
+    cursor: pointer;
+}
+
+.divPOCcaptain{
+    width: 50%;
+    height: 100%;
+}
+
+.cardDescription{ /*=== card da descriçao ===*/
+    background-color:rgb(12, 0, 0, 0.30);
+    border: solid 1px white;
+    border-radius: 10px;
+    height: 100%;   
+}
+
+.cardDescription p {
+    padding: 1%;
+    font-size: 1vw;
+}
+  
+.guildDescriptionCompetition{ /*=== descriçao da guilda ===*/
+    display: flex;
+    width: 80%;
+    height: 30%;
+    gap: 5%;
+}
+
+.descriptionTextArea { /*=== descriçao da guilda ===*/
+    width: 100%;
+    height: 90%;
+    padding: 10px;
+    font-size: 1vw;
+    border-radius: 5px;
+    background-color: transparent;
+    resize: none;
+    color: white;
+}
+  
+.saveDescriptionButton {/*=== botao para salvar descriçao da guilda ===*/
+    background-color: #ff073a;
+    color: #ffffff;
+    border: none;
+    width: 100%;
+    height: 10%;
+    margin-bottom: 10%;
+    border-radius: 0px 0px 15px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card {
+    background-color:rgb(12, 0, 0, 0.30);
+    border: solid 1px white;
+    padding: 20px;
+    border-radius: 10px;
+    height: 100%;
+    text-align: center;
+}
+
+.divChatWebSocketsGuildEmBreve{
+    background-color: #ffffff3d;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+    height: 100%;
+    width: 100%;
+}
+
+/*===================================================FUNCIONAMENTO EM NOTEBOOKS ================================================*/
+
+@media (max-width: 1200px) {
+
+    .alignHeaderOneGuildLayout img{ /*=== Imagem Da Guilda ===*/    
+        height: 75%;
+    }
+    
+    .alignHeaderOneGuildLayout h1 { /*=== Nome Da Guilda ===*/
+        font-size: 3vw;
+    }
+
+    .btnAlignHeaderThreeGuildLayout{ /*=== botao de setting e mensagens Da Guilda ===*/
+        width: 3.5vw;
+        height: 3.5vw;
+    }
+
+    .btnAlignHeaderThreeGuildLayout svg{ /*=== botao de setting e mensagens Da Guilda ===*/
+        font-size: 1.8vw;
+    }
+    
+    .divCarouselBtns button svg{ /*=== svg dos botoes dos carrosel ===*/
+        font-size: 1.5vw;
+    }
+    
+    .divCaroselSpans .svgDecline { /*=== span Desativado dos carrosel ===*/
+        font-size: 3.5vw;
+        border-radius: 10px;
+    }
+      
+    .divCaroselSpans .active { /*=== span Ativado dos carrosel ===*/
+        font-size: 3.75vw;
+        border-radius: 10px;
+    }
+
+    .cardPlayerOfCap{ /*=== card do capitao e players ===*/
+        padding-left: 1.5%;
+        padding-top: 1.5%;
+    }
+
+    .cardPlayerOfCap h1{ /*=== Estilo Do Nome Do Capitao ===*/
+        font-size: 2.5vw;
+        gap: 4%;
+    }
+    
+    .cardPlayerOfCap h3{ /*=== Estilo Do Nome Do Capitao ===*/
+        margin-top: 3%;
+        font-size: 2vw;
+        gap: 4%;
+    }
+    
+    .inputAddMember{
+        width: 90%;
+        height: 50px;
+        font-size: 1.8vw;
+    }
+    
+    .btnAddMember{
+        width: 4vw;
+        height: 4vw;
+        font-size: 4vw;
+    }
+
+    .cardPlayerOfCap p {
+        font-size: 1.8vw;
+    }
+
+    .cardDescription p {
+        padding: 1%;
+        font-size: 2vw;
+    }
+
+    .descriptionTextArea { /*=== descriçao da guilda ===*/
+        padding: 10px;
+        font-size: 2vw;
+    }
+
+}
+
+/*===================================================FUNCIONAMENTO EM Tablets ================================================*/
+
+@media (max-width: 900px) {
+
+    .alignHeaderOneGuildLayout img{ /*=== Imagem Da Guilda ===*/    
+        height: 70%;
+    }
+    
+    .alignHeaderOneGuildLayout h1 { /*=== Nome Da Guilda ===*/
+        font-size: 4vw;
+    }
+
+    .btnAlignHeaderThreeGuildLayout{ /*=== botao de setting e mensagens Da Guilda ===*/
+        width: 6vw;
+        height: 6vw;
+    }
+
+    .btnAlignHeaderThreeGuildLayout svg{ /*=== botao de setting e mensagens Da Guilda ===*/
+        font-size: 3vw;
+    }
+    
+    .divCarouselBtns button svg{ /*=== svg dos botoes dos carrosel ===*/
+        font-size: 3vw;
+    }
+    
+    .divCaroselSpans .svgDecline { /*=== span Desativado dos carrosel ===*/
+        font-size: 6.5vw;
+        border-radius: 10px;
+    }
+      
+    .divCaroselSpans .active { /*=== span Ativado dos carrosel ===*/
+        font-size: 6.75vw;
+        border-radius: 10px;
+    }
+
+    .cardPlayerOfCap h1{ /*=== Estilo Do Nome Do Capitao ===*/
+        font-size: 3.8vw;
+    }
+    
+    .cardPlayerOfCap h3{ /*=== Estilo Do Nome Do Capitao ===*/
+        font-size: 3vw;
+    }
+
+    .divPOCall{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .divAddMember{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .inputAddMember{
+        height: 40px;
+        font-size: 2.5vw;
+    }
+    
+    .btnAddMember{
+        width: 5vw;
+        height: 5vw;
+        font-size: 5vw;
+    }
+
+    .cardPlayerOfCap p {
+        font-size: 2.3vw;
+    }
+
+    .cardDescription p {
+        padding: 1%;
+        font-size: 2.3vw;
+    }
+
+    .descriptionTextArea { /*=== descriçao da guilda ===*/
+        padding: 10px;
+        font-size: 2.3vw;
+    }
+}
+
+/*===================================================FUNCIONAMENTO EM MOBILE================================================*/
+
+@media (max-width: 500px) {
+   
+    .cardPlayerOfCap h1{ /*=== Estilo Do Nome Do Capitao ===*/
+        font-size: 4vw;
+    }
+    
+    .cardPlayerOfCap h3{ /*=== Estilo Do Nome Do Capitao ===*/
+        font-size: 3.2vw;
+    }
+    
+
+    .cardPlayerOfCap p {
+        font-size: 2.5vw;
+    }
+
+    .cardDescription p {
+        padding: 1%;
+        font-size: 2.5vw;
+    }
+
+    .descriptionTextArea { /*=== descriçao da guilda ===*/
+        padding: 10px;
+        font-size: 2.5vw;
+    }
+}
+  

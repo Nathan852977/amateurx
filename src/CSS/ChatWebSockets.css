@@ -1,0 +1,117 @@
+.divAllChatWebSockets{ /*=== Div que engloba todo meu componente ====*/
+  background-color: rgba(0, 0, 255, 0.1);
+  width: 100%;
+  height: 100%;
+}
+
+.divMessages{
+  flex-grow: 1;
+  width: 100%;
+  height: 95%;
+  padding-left: 10px;
+  padding-right: 10%;
+  overflow-y: auto;
+}
+
+.messageWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.dateHeader {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+
+.userMessage {
+  justify-content: flex-start;
+}
+
+.friendMessage {
+  justify-content: flex-end;
+}
+
+.messagePhoto {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.messageContent {
+  max-width: 50%; /* Limita a largura das mensagens a 50% */
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  word-wrap: break-word; /* Quebra as palavras automaticamente */
+}
+
+.divInputChatWebSockets{ /*=== Div do input e do botao de enviar a mensagem ====*/
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5%;
+  display: flex;
+}
+
+.inputChatWebSockets{
+  background-color: #ffffff;
+  color: black;
+  border: solid 1px rgba(255, 255, 255, 0.5); 
+  transition: border 0.3s, box-shadow 0.3s;
+  width: 80%;
+  height: 100%;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.inputChatWebSockets:focus {
+  border-color: #94bcdc;
+  outline: none;
+  box-shadow: 0 0 15px rgba(148, 188, 220, 0.9);
+}
+
+.btnEnviteMessage{
+  width: 12.5%;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btnEnviteMessage:hover{
+  transform: scale(1.01);
+  background-color: #45a049;
+}
+
+
+
+/*===================================================FUNCIONAMENTO EM NOTEBOOKS ================================================*/
+
+@media (max-width: 1200px) {
+
+
+}
+
+/*===================================================FUNCIONAMENTO EM Tablets ================================================*/
+
+@media (max-width: 900px) {
+
+
+}
+
+/*===================================================FUNCIONAMENTO EM MOBILE================================================*/
+
+@media (max-width: 500px) {
+
+}

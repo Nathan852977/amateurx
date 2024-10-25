@@ -1,0 +1,40 @@
+.MainOnStyle {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-top: 8vh;
+}
+
+.MainOnStyle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../img//MainBackGroundOff.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(5px); /* Aplica o blur na imagem de fundo */
+    z-index: -1; /* Coloca a imagem desfocada atrás do conteúdo */
+}
+
+.divContentMain {
+    position: relative;
+    height: 100%;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 1;
+    transform: translateX(0);
+}
+  
+.slide-in {
+    transform: translateX(0); /* Componente entra visível */
+    opacity: 1;
+}
+  
+.slide-out {
+    transform: translateX(-100%); /* Componente sai pela esquerda */
+    opacity: 0;
+}
+  

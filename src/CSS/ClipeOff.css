@@ -1,0 +1,41 @@
+.clipeoff-container {
+    background-color: #14141c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vw;
+  }
+  
+.video-box {
+    width: 50%;
+    height: 90%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    position: relative;
+}
+  
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*===================================================FUNCIONAMENTO EM NOTEBOOKS ================================================*/
+  
+@media (max-width: 1200px) {
+
+}    
+/*===================================================FUNCIONAMENTO EM Tablets ================================================*/
+    
+@media (max-width: 900px) {
+
+}
+    
+/*===================================================FUNCIONAMENTO EM MOBILE================================================*/
+    
+@media (max-width: 500px) {
+
+}
+  

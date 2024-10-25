@@ -1,0 +1,366 @@
+.divAllcompAdminFases{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.60);
+}
+
+.navigationCompAdminFases{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7.5%;
+  color: white;
+  font-size: 1.5vw;
+}
+
+.navigationCompAdminFases h3{
+  border-bottom: solid 1.5px white;
+}
+
+.textNavActive{
+  border-bottom: solid 1.5px red;
+  color: #ff073a;
+  text-shadow: 
+  -1px -1px 0 #94bcdc,  
+  1px -1px 0 #94bcdc,
+  -1px 1px 0 #94bcdc,
+  1px 1px 0 #94bcdc;
+}
+
+.divAllReleasePlayer{
+  width: 95%;
+  height: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.releasePlayerCard{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+  margin-top: 2%;
+  width: 80%;
+  height: 7.5%;
+  padding-left: 2%;
+  background-color: #0c1c24;
+  color: white;
+  border: solid 1px rgba(255, 255, 255, 0.5); 
+  border-radius: 25px;
+  font-size: 1.5vw; 
+}
+
+.releasePlayerCard button {
+  background-color: red;
+  width: 4%;
+  border-radius: 50%;
+  height: 80%;
+}
+
+.releasePlayerCard button:hover {
+  background-color: green;
+  transform: scale(1.1);
+}
+
+.statusDivAll h2{
+  color: white;
+  font-size: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.statusDivAll div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+.btnEndCompOne, .btnEndCompTwo{
+  width: 20%;
+  height: 50px;
+  font-size: 1.3vw;
+  color: white;
+  border-radius: 15px;
+  border: solid 1px white;
+  margin-top: 5%;
+}
+
+.btnEndCompOne:hover, .btnEndCompTwo:hover{
+  transform: scale(1.1);
+  border: solid 2px black;
+}
+
+.btnEndCompOne{
+  background-color: #94bcdc;
+}
+
+.btnEndCompTwo{
+  background-color: #ff073a;
+}
+
+
+/*===================================================Mata Mata================================================*/
+
+.divAllfaseMataMata {
+  margin-top: 20px;
+}
+
+/* Estilo dos jogadores */
+.playerBox {
+  background-color: #0c1c24;
+  border: 1px solid #ccc;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  display: flex;
+}
+
+.playerBox.sent {
+  background-color: #cccccc8a; /* Cor de fundo cinza */
+  border: 1px solid #999999; /* Borda cinza */
+}
+
+.alignSecOnePlayerBox{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-size: 1.3vw;
+  width: 40%;
+}
+
+.alignSecTwoPlayerBox{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5vw;
+  width: 60%;
+}
+
+.alignSecTwoPlayerBox input{
+  height: 50%;
+  width: 25%;
+}
+  
+.playersContainer {
+    display: grid;
+    margin: auto;
+    width: 70%;
+    gap: 10px;
+}
+
+.playersContainer[data-num-players="10"] {
+    grid-template-columns: 1fr;
+}
+
+  /* Se tiver entre 11 e 26 jogadores, 2 colunas */
+  .playersContainer[data-num-players="11"],
+  .playersContainer[data-num-players="12"],
+  .playersContainer[data-num-players="13"],
+  .playersContainer[data-num-players="14"],
+  .playersContainer[data-num-players="15"],
+  .playersContainer[data-num-players="16"],
+  .playersContainer[data-num-players="17"],
+  .playersContainer[data-num-players="18"],
+  .playersContainer[data-num-players="19"],
+  .playersContainer[data-num-players="20"],
+  .playersContainer[data-num-players="21"],
+  .playersContainer[data-num-players="22"],
+  .playersContainer[data-num-players="23"],
+  .playersContainer[data-num-players="24"],
+  .playersContainer[data-num-players="25"],
+  .playersContainer[data-num-players="26"] {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Se tiver entre 27 e 39 jogadores, 3 colunas */
+  .playersContainer[data-num-players="27"],
+  .playersContainer[data-num-players="28"],
+  .playersContainer[data-num-players="29"],
+  .playersContainer[data-num-players="30"],
+  .playersContainer[data-num-players="31"],
+  .playersContainer[data-num-players="32"],
+  .playersContainer[data-num-players="33"],
+  .playersContainer[data-num-players="34"],
+  .playersContainer[data-num-players="35"],
+  .playersContainer[data-num-players="36"],
+  .playersContainer[data-num-players="37"],
+  .playersContainer[data-num-players="38"],
+  .playersContainer[data-num-players="39"] {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Se tiver entre 40 e 52 jogadores, 4 colunas */
+  .playersContainer[data-num-players="40"],
+  .playersContainer[data-num-players="41"],
+  .playersContainer[data-num-players="42"],
+  .playersContainer[data-num-players="43"],
+  .playersContainer[data-num-players="44"],
+  .playersContainer[data-num-players="45"],
+  .playersContainer[data-num-players="46"],
+  .playersContainer[data-num-players="47"],
+  .playersContainer[data-num-players="48"],
+  .playersContainer[data-num-players="49"],
+  .playersContainer[data-num-players="50"],
+  .playersContainer[data-num-players="51"],
+  .playersContainer[data-num-players="52"] {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+
+.divAllcompAdminFases img{
+    width: 100px;
+}
+
+
+/*===================================================FUNCIONAMENTO EM DESKTOPS ================================================*/
+
+@media (max-width: 1200px) {
+  
+    /* Se tiver até 10 jogadores, 1 coluna */
+    .playersContainer[data-num-players="10"] {
+      grid-template-columns: 1fr;
+    }
+  
+    /* De 11 a 48 jogadores, dividir em colunas de 8 jogadores */
+    .playersContainer[data-num-players="11"],
+    .playersContainer[data-num-players="12"],
+    .playersContainer[data-num-players="13"],
+    .playersContainer[data-num-players="14"],
+    .playersContainer[data-num-players="15"],
+    .playersContainer[data-num-players="16"],
+    .playersContainer[data-num-players="17"],
+    .playersContainer[data-num-players="18"],
+    .playersContainer[data-num-players="19"],
+    .playersContainer[data-num-players="20"],
+    .playersContainer[data-num-players="21"],
+    .playersContainer[data-num-players="22"],
+    .playersContainer[data-num-players="23"],
+    .playersContainer[data-num-players="24"],
+    .playersContainer[data-num-players="25"],
+    .playersContainer[data-num-players="26"],
+    .playersContainer[data-num-players="27"],
+    .playersContainer[data-num-players="28"],
+    .playersContainer[data-num-players="29"],
+    .playersContainer[data-num-players="30"],
+    .playersContainer[data-num-players="31"],
+    .playersContainer[data-num-players="32"],
+    .playersContainer[data-num-players="33"],
+    .playersContainer[data-num-players="34"],
+    .playersContainer[data-num-players="35"],
+    .playersContainer[data-num-players="36"],
+    .playersContainer[data-num-players="37"],
+    .playersContainer[data-num-players="38"],
+    .playersContainer[data-num-players="39"],
+    .playersContainer[data-num-players="40"],
+    .playersContainer[data-num-players="41"],
+    .playersContainer[data-num-players="42"],
+    .playersContainer[data-num-players="43"],
+    .playersContainer[data-num-players="44"],
+    .playersContainer[data-num-players="45"],
+    .playersContainer[data-num-players="46"],
+    .playersContainer[data-num-players="47"],
+    .playersContainer[data-num-players="48"] {
+      grid-template-columns: repeat(8, 1fr);
+    }
+  
+    /* Se tiver de 49 a 52 jogadores, ajuste para que os últimos 4 jogadores fiquem em uma linha */
+    .playersContainer[data-num-players="49"] {
+      grid-template-columns: repeat(7, 1fr);
+    }
+  
+    .playersContainer[data-num-players="50"] {
+      grid-template-columns: repeat(7, 1fr);
+    }
+  
+    .playersContainer[data-num-players="51"] {
+      grid-template-columns: repeat(7, 1fr);
+    }
+  
+    .playersContainer[data-num-players="52"] {
+      grid-template-columns: repeat(7, 1fr);
+    }
+  
+    /* Estilização para os jogadores */
+    .playerBox {
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+      border-radius: 5px;
+    }
+}
+  
+/*===================================================FUNCIONAMENTO EM TABLETS E MOBILE================================================*/
+
+@media (max-width: 900px) {
+    .playersContainer {
+      display: grid;
+      gap: 10px;
+      max-height: 500px; /* Limita a altura da lista de jogadores */
+      overflow-y: auto; /* Adiciona a rolagem vertical para navegar pelos jogadores */
+    }
+  
+    /* Até 10 jogadores: 1 coluna */
+    .playersContainer[data-num-players="10"] {
+      grid-template-columns: 1fr;
+    }
+  
+    /* De 11 a 20 jogadores: 2 colunas */
+    .playersContainer[data-num-players="11"],
+    .playersContainer[data-num-players="12"],
+    .playersContainer[data-num-players="13"],
+    .playersContainer[data-num-players="14"],
+    .playersContainer[data-num-players="15"],
+    .playersContainer[data-num-players="16"],
+    .playersContainer[data-num-players="17"],
+    .playersContainer[data-num-players="18"],
+    .playersContainer[data-num-players="19"],
+    .playersContainer[data-num-players="20"] {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    /* De 21 a 52 jogadores: Mantém 2 colunas e ajusta a altura com scroll */
+    .playersContainer[data-num-players="21"],
+    .playersContainer[data-num-players="22"],
+    .playersContainer[data-num-players="23"],
+    .playersContainer[data-num-players="24"],
+    .playersContainer[data-num-players="25"],
+    .playersContainer[data-num-players="26"],
+    .playersContainer[data-num-players="27"],
+    .playersContainer[data-num-players="28"],
+    .playersContainer[data-num-players="29"],
+    .playersContainer[data-num-players="30"],
+    .playersContainer[data-num-players="31"],
+    .playersContainer[data-num-players="32"],
+    .playersContainer[data-num-players="33"],
+    .playersContainer[data-num-players="34"],
+    .playersContainer[data-num-players="35"],
+    .playersContainer[data-num-players="36"],
+    .playersContainer[data-num-players="37"],
+    .playersContainer[data-num-players="38"],
+    .playersContainer[data-num-players="39"],
+    .playersContainer[data-num-players="40"],
+    .playersContainer[data-num-players="41"],
+    .playersContainer[data-num-players="42"],
+    .playersContainer[data-num-players="43"],
+    .playersContainer[data-num-players="44"],
+    .playersContainer[data-num-players="45"],
+    .playersContainer[data-num-players="46"],
+    .playersContainer[data-num-players="47"],
+    .playersContainer[data-num-players="48"],
+    .playersContainer[data-num-players="49"],
+    .playersContainer[data-num-players="50"],
+    .playersContainer[data-num-players="51"],
+    .playersContainer[data-num-players="52"] {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+}

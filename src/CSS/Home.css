@@ -1,0 +1,64 @@
+.divAllHomeStyle{
+    display: flex;
+    height: 100%;
+    position: relative; /* Adicione esta linha */
+    z-index: 1;
+}
+
+.asideAllHomeSyle{
+    height: 100%;
+}
+
+.secAllHomeStyle{
+    width: 100%;
+    height: 100%;
+}
+
+.secAllHomeStyleMobile{
+    display: none;
+}
+
+.divBtnAlignAnchorFriendsStyle{
+    display: none;
+}
+
+
+/*===================================================FUNCIONAMENTO EM Tablets ================================================*/
+
+@media (max-width: 900px) {
+
+    .divBtnAlignAnchorFriendsStyle{   
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    .anchorFriendsStyle{
+        background-color: transparent;
+        border: none;
+        color: rebeccapurple;
+        position: relative;
+        right: 5px;
+        font-size: 7.5vw;
+    }
+    
+}
+    
+/*===================================================FUNCIONAMENTO EM MOBILE================================================*/
+    
+@media (max-width: 500px) {
+    .divBtnAlignAnchorFriendsStyle{   
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    .anchorFriendsStyle{
+        background-color: transparent;
+        border: none;
+        color: rebeccapurple;
+        position: relative;
+        right: 5px;
+        font-size: 8vw;
+    }
+}

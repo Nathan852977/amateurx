@@ -1,0 +1,519 @@
+.divEnterGuild{ /*=== Estilo que engloba Todo Componente EnterGuild ===*/
+    background-color: rgba(20, 20, 28, 0.75);
+    width: 75%;
+    height: 75%;
+    margin-top: 5%;
+    border-width: 5px;
+    border-style: solid;
+    border-image: linear-gradient(to right, red 50%, lightblue 50%) 1;
+    overflow: hidden;
+}
+
+.alignOneEnterGuild{ /*=== div que alinha o botao de voltar e o texto ===*/
+    height: 15%;
+}
+
+.btnbackEnterGuild{ /*=== Estilo Do Botao Para Voltar ===*/
+   background-color: transparent;
+   border: none;
+   color: white; 
+   font-size: 1.3vw;
+   margin: 1%;
+   display: flex;
+   align-items: center;
+   text-shadow: 
+    -1px -1px 0 #94bcdc,  
+    1px -1px 0 #94bcdc,
+    -1px 1px 0 #94bcdc,
+    1px 1px 0 #94bcdc;
+}
+
+.alignOneEnterGuild h1{ /*=== Estilo Do Texto (Crie sua Guilda) ===*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 2%;
+    font-size: 2vw;
+    text-shadow: 
+    -1px -1px 0 #94bcdc,  
+    1px -1px 0 #94bcdc,
+    -1px 1px 0 #94bcdc,
+    1px 1px 0 #94bcdc;
+}
+
+.divGuildContent{ /*=== div que contem os inputs, e os conteudo ===*/
+    width: 80%;
+    max-height: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+    padding-top: 5%;
+}
+
+.inputContainer { /*=== div que contem o input para buscar as guildas ===*/
+    position: relative;
+    width: 50%;
+    margin: 0 auto;  
+}
+
+.inputSearchGuild { /*=== input para buscar as guildas ===*/
+    width: 100%; 
+    padding: 10px 40px 10px 15px;
+    border: 2px solid #94bcdc;
+    background-color: #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 0 15px rgba(148, 188, 220, 0.9);
+}
+
+.inputContainer svg { /*=== svg input para buscar as guildas ===*/
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #999;
+    cursor: pointer;
+}
+
+.divGuildContent p{ /*=== tag p que mostra quantos convites ainda tem ===*/
+    color: white;
+    font-size: 1.3vw;
+    text-align: center;
+}
+
+.guildItem{ /*=== div que contem os intems do input ===*/
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 10%;
+    padding-left: 2%;
+    background-color: #0c1c24;
+    color: white;
+    border: solid 1px rgba(255, 255, 255, 0.5); 
+    border-radius: 25px; 
+}
+
+.guildItem:hover{ /*=== div que contem os intems do input ===*/
+    border-color: #94bcdc;
+    box-shadow: 0 0 15px rgba(148, 188, 220, 0.9);
+}
+
+.guildItem img{ /*=== imagem da guilda no input ===*/
+    width: 5%;
+    border-radius: 50%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+.guildItem h3{ /*=== nome da guilda no input ===*/
+    height: 100%;
+    font-size: 1.5vw;
+    width: 20%;
+}
+
+.guildItem h4{ /*=== capitao da guilda no input ===*/
+    width: 30%;
+    font-size: 1.5vw;
+    display: flex;
+    gap: 10px;
+}
+
+.guildItem h4 svg{ /*=== svg do capitao da guilda no input ===*/
+    color: gold;
+}
+
+.guildItem h5{ /*=== vitorias e participaçoes da guilda no input ===*/
+    width: 10%;
+    font-size: 1.5vw;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gameLogoGuild{  /*=== imagem do jogo da guilda no input ===*/
+    margin-left: 20%;
+}
+
+.noGuildsMessage { /*=== tag p quando nao tem guildas cadastradas ===*/
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+    color: white; 
+    font-size: 2vw;
+    text-align: center; 
+}
+
+.modalOverlay { /*=== div que contem todas as informaçoes da guilda ===*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContent{ /*=== div que contem o conteudo das informaçoes da guilda ===*/
+    width: 50%;
+    height: 50%;
+    background-color: #343c44;
+    border-width: 2.5px;
+    border-style: solid;
+    border-image: linear-gradient(to right, red 50%, lightblue 50%) 1;
+}
+
+.secAlignOneGuildSelected{ /*=== div que contem a img e o nome da informaçoes da guilda ===*/
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-bottom:  solid 0.5px white;
+}
+
+.secAlignOneGuildSelected img{ /*=== img da informaçoes da guilda ===*/
+    border-radius: 50%;
+    width: 7.5%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+.secAlignOneGuildSelected h3{ /*=== nome da informaçoes da guilda ===*/
+    font-size: 2vw;
+    color: white;
+    text-shadow: 
+    -1px -1px 0 #94bcdc,  
+    1px -1px 0 #94bcdc,
+    -1px 1px 0 #94bcdc,
+    1px 1px 0 #94bcdc;
+}
+
+.secAlignTwoGuildSelected{ /*=== section que alinha a segunda seçao da informaçoes da guilda ===*/
+    color: white;
+    display: flex;
+}
+
+.alignGuildSelectPlayerOfCap{ /*=== div que alinha o capitao e os players da informaçoes da guilda ===*/
+    width: 25%;
+    border-bottom: solid 0.5px white;
+    height: 300px;
+}
+
+.alignGuildSelectPlayerOfCap h3{ /*=== capitao informaçoes da guilda ===*/
+    font-size: 1.8vw;
+}
+
+.playerItem h4{ /*=== players informaçoes da guilda ===*/
+    font-size: 1vw;
+    margin-top: 0.5%;
+}
+
+.guildSelectedTextArea { /*=== div que alinha a descriçao da informaçoes da guilda ===*/
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+   
+.guildDescriptionDiv { /*=== descriçao da informaçoes da guilda ===*/
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    font-size: 1.3vw;
+    border: 1px solid #94bcdc;
+    border-radius: 5px;
+    background-color: #101c24;
+    color: white;
+    outline: none;
+    overflow: hidden;
+    white-space: pre-wrap;
+}
+  
+.secAlignThreeGuildSelected h2{  /*=== texto do convite da informaçoes da guilda ===*/
+    padding-top: 1.5%;
+    color: white;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.modalButtons { /*=== div do botoes do convite da informaçoes da guilda ===*/
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin-top: 2.5%;
+}
+  
+.modalButtons button { /*=== botoes do convite da informaçoes da guilda ===*/
+    width: 10vw;
+    height: 2.5vw;
+    font-size: 1.5vw;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #94bcdc;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+  
+.modalButtons button:hover { /*=== botao (Enviar) do convite da informaçoes da guilda ===*/
+    background-color: #91ccfd;
+}
+
+.modalButtons button[disabled] { /*=== botao (Enviar) do convite da informaçoes da guilda ===*/
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+  
+.modalButtons button:nth-child(2) { /*=== botao (Cancelar) do convite da informaçoes da guilda ===*/
+    background-color: #ff073a;
+}
+  
+.modalButtons button:nth-child(2):hover { /*=== botao (Cancelar) do convite da informaçoes da guilda ===*/
+    background-color: red;
+}
+
+/*===================================================FUNCIONAMENTO EM NOTEBOOKS ================================================*/
+
+@media (max-width: 1200px) {
+
+
+    .btnbackEnterGuild{ /*=== Estilo Do Botao Para Voltar ===*/
+        font-size: 1.8vw;
+    }
+
+    .alignOneEnterGuild h1{ /*=== Estilo Do Texto (Crie sua Guilda) ===*/
+        margin-top: 5%;
+        font-size: 3vw;
+    }
+    
+    .inputContainer { /*=== div que contem o input para buscar as guildas ===*/
+        width: 70%; 
+    }
+
+    .divGuildContent p{ /*=== tag p que mostra quantos convites ainda tem ===*/
+        font-size: 2vw;
+    }
+
+    .guildItem img{ /*=== imagem da guilda no input ===*/
+        width: 8%;
+    }
+
+    .guildItem h3{ /*=== nome da guilda no input ===*/
+        font-size: 1.8vw;
+        width: 25%;
+    }
+
+    .guildItem h4{ /*=== capitao da guilda no input ===*/
+        font-size: 1.8vw;
+        width: 25%;
+    }
+    
+    .guildItem h5{  /*=== vitorias e participaçoes da guilda no input ===*/
+        width: 10%;
+        font-size: 1.8vw;
+    }
+    
+    .gameLogoGuild{ /*=== imagem do jogo da guilda no input ===*/
+        margin-left: 10%;
+    }
+    
+    .noGuildsMessage { /*=== tag p quando nao tem guildas cadastradas ===*/
+        font-size: 2vw;
+    }
+    
+    .alignGuildSelectPlayerOfCap h3{ /*=== capitao informaçoes da guilda ===*/
+        font-size: 1.8vw;
+    }    
+
+    .modalContent h2, .modalContent p{ /*=== tag h2 e p para o convite da guilda e o error ===*/
+        font-size: 3vw;
+    }
+
+    .modalButtons button { /*=== botoes do convite da informaçoes da guilda ===*/
+        width: 15vw;
+        height: 4vw;
+        font-size: 2vw;
+    }
+    
+    .modalContent{ /*=== div do conteudo central das informarçoes da guilda ===*/
+        width: 75%;
+        height: 50%;
+    }
+
+    .guildDescriptionDiv { /*=== descriçao da informaçoes da guilda ===*/
+        font-size: 2.3vw;
+    }
+
+    .alignGuildSelectPlayerOfCap h3{ /*=== nome da informaçoes da guilda ===*/
+        font-size: 2.5vw;
+    }
+    
+    .playerItem h4{ /*=== players informaçoes da guilda ===*/
+        font-size: 1.8vw;
+        margin-top: 0.5%;
+    }
+
+}
+
+/*===================================================FUNCIONAMENTO EM Tablets ================================================*/
+
+@media (max-width: 900px) {
+ 
+    .btnbackEnterGuild{ /*=== Estilo Do Botao Para Voltar ===*/
+        font-size: 3vw;
+    }
+
+    .alignOneEnterGuild h1{ /*=== Estilo Do Texto (Crie sua Guilda) ===*/
+        margin-top: 8%;
+        font-size: 5vw;
+    }
+
+    .inputContainer { /*=== div que contem o input para buscar as guildas ===*/
+        width: 80%; 
+    }
+
+    .divGuildContent p{ /*=== tag p que mostra quantos convites ainda tem ===*/
+        font-size: 3vw;
+    }
+
+    .guildItem img{ /*=== imagem da guilda no input ===*/
+        width: 10%;
+    }
+
+    .guildItem h3{ /*=== nome da guilda no input ===*/
+        font-size: 2.3vw;
+        width: 30%;
+    }
+
+    .guildItem h4{ /*=== capitao da guilda no input ===*/
+        font-size: 2.5vw;
+        width: 30%;
+    }
+    
+    .guildItem h5{  /*=== vitorias e participaçoes da guilda no input ===*/
+        width: 5%;
+        font-size: 2.5vw;
+    }
+    
+    .gameLogoGuild{ /*=== imagem do jogo da guilda no input ===*/
+        margin-left: 5%;
+        margin-right: 2%;
+    }
+
+    .noGuildsMessage { /*=== tag p quando nao tem guildas cadastradas ===*/
+        font-size: 3.5vw;
+    }
+
+    .alignGuildSelectPlayerOfCap h3{ /*=== capitao informaçoes da guilda ===*/
+        font-size: 4vw;
+    }  
+
+    .modalContent h2, .modalContent p{ /*=== tag h2 e p para o convite da guilda e o error ===*/
+        font-size: 5vw;
+    }
+
+    .modalButtons button { /*=== botoes do convite da informaçoes da guilda ===*/
+        width: 25vw;
+        height: 7.5vw;
+        font-size: 4vw;
+    }
+    
+    .modalContent{ /*=== div do conteudo central das informarçoes da guilda ===*/
+        width: 90%;
+        height: 45%;
+        margin-bottom: 25%;
+    }
+
+    .guildDescriptionDiv { /*=== descriçao da informaçoes da guilda ===*/
+        font-size: 4vw;
+    }
+
+    .secAlignOneGuildSelected img{ /*=== img da informaçoes da guilda ===*/
+        border-radius: 50%;
+        width: 10%;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+    }
+
+    .secAlignOneGuildSelected h3{ /*=== nome da informaçoes da guilda ===*/
+        font-size: 4vw;
+    }
+
+    .alignGuildSelectPlayerOfCap h3{ /*=== nome da informaçoes da guilda ===*/
+        font-size: 4vw;
+    }
+    
+    .playerItem h4{ /*=== players informaçoes da guilda ===*/
+        font-size: 3vw;
+        margin-top: 5%;
+    }
+
+    .alignGuildSelectPlayerOfCap{ /*=== tamanho da div aumentada informaçoes da guilda ===*/
+        height: 200px;
+    }
+
+}
+
+/*===================================================FUNCIONAMENTO EM MOBILE================================================*/
+
+@media (max-width: 500px) {
+
+    .btnbackEnterGuild{ /*=== Estilo Do Botao Para Voltar ===*/
+        font-size: 4vw;
+        margin-top: 2%;
+    }
+
+    .alignOneEnterGuild h1{ /*=== Estilo Do Texto (Crie sua Guilda) ===*/
+        margin-top: 10%;
+    }
+
+    .divGuildContent p{ /*=== tag p que mostra quantos convites ainda tem ===*/
+        font-size: 3.5vw;
+    }
+
+    .guildItem img{ /*=== imagem da guilda no input ===*/
+        width: 12%;;
+    }
+
+    .guildItem h3{ /*=== nome da guilda no input ===*/
+        font-size: 2.5vw;
+        width: 30%;
+    }
+
+    .guildItem h4{ /*=== capitao da guilda no input ===*/
+        font-size: 2.7vw;
+        width: 30%;
+    }
+    
+    .guildItem h5{  /*=== vitorias e participaçoes da guilda no input ===*/
+        width: 5%;
+        font-size: 2.7vw;
+    }
+    
+    .gameLogoGuild{ /*=== imagem do jogo da guilda no input ===*/
+        margin-left: 2%;
+        margin-right: 5%;
+    }
+
+    .noGuildsMessage { /*=== tag p quando nao tem guildas cadastradas ===*/
+        font-size: 4vw;
+    }
+
+    .secAlignOneGuildSelected img{ /*=== img da informaçoes da guilda ===*/
+        border-radius: 50%;
+        width: 12%;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+    }
+
+}

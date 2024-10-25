@@ -1,0 +1,214 @@
+.divAllAboutUsOFContact{
+    display: flex;
+    height: auto;
+}
+
+/*========================================================================= (AboutUS) ===========================================*/
+
+.divAllAboutUs{ /*=== DIV que envovle todo o meu componente "AboutUS" ===*/
+    background: #14141c;
+    width: 50%;
+    box-shadow: 5px 0 15px #94bcdc; /* Sombra na direita */
+}
+
+.divAllAboutUs section:nth-child(1){ /*=== Section com o nome "Sobre Nos" ===*/
+    padding: 1%;
+    font-size: 1.5vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.secAboutUsText{ /*=== Section Do Texto e do Botão ===*/
+    margin-top: 1%;
+    margin-left: 5%;
+    width: 60%;
+    font-size: 1.3vw; 
+    color: white;
+}
+
+.titleNameAboutUs{ /*=== Titulo "AmateurX" ===*/
+    font-family: "Bungee", sans-serif;
+    font-size: 2vw; 
+    color: #ff073a;
+    text-shadow: 
+    -1px -1px 0 #94bcdc,  
+    1px -1px 0 #94bcdc,
+    -1px 1px 0 #94bcdc,
+    1px 1px 0 #94bcdc ;
+}
+
+.secAboutUsText p{ /*=== tag P com o texto ===*/
+    font-family: "Lora", serif;
+    font-size: 1.1vw;
+    line-height: 1.5;
+}
+
+/*========================================================================= (Contact) ===========================================*/
+
+.divAllContact{ /*=== DIV que envovle todo o meu componente "AboutUS" ===*/
+    background: #ff073a;
+    width: 50%;
+    box-shadow: -5px 0 15px #94bcdc;
+}
+
+.divAllContact section:nth-child(1){ /*=== Section com o nome "Contato" ===*/
+    padding: 1%;
+    font-size: 1.5vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.secContentContact{ /*=== Section que envolve Os Botos e o Carrosel ===*/
+    display: flex;
+}
+
+.divBtnContent{
+    margin-bottom: 5%;
+    width: 10%;
+    height: 100%;
+    gap: 1.3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.divCarouselContainer { /*=== Div que engloba todo o Carrosel ===*/
+    width: 70%;
+    height: 20%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.divCarousel {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+  
+.carouselImage {
+    min-width: 100%;
+    height: 17vw; 
+}
+
+.divIndicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Espaçamento entre o carrossel e os indicadores */
+}
+  
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb; /* Cor padrão dos indicadores */
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171; /* Cor dos indicadores ativos */
+}
+
+/*===================================================FUNCIONAMENTO EM NOTEBOOKS ================================================*/
+  
+@media (max-width: 1200px) {
+
+    .divAllAboutUs section:nth-child(1){ /*=== Section com o nome "Sobre Nos" ===*/  
+        font-size: 2vw;
+    }
+
+    .divAllContact section:nth-child(1){ /*=== Section com o nome "Sobre Nos" ===*/  
+        font-size: 2vw;
+    }
+    
+    .secAboutUsText{ /*=== Section Do Texto e do Botão ===*/
+        font-size: 2vw; 
+    }
+    
+    .titleNameAboutUs{ /*=== Titulo "AmateurX" ===*/
+        font-size: 2.5vw; 
+    }
+    
+    .secAboutUsText p{ /*=== tag P com o texto ===*/
+        font-size: 1.4vw;
+        line-height: 1.6;
+    }
+
+    .carouselImage {
+        height: 17vw; 
+    }
+
+}    
+/*===================================================FUNCIONAMENTO EM Tablets ================================================*/
+    
+@media (max-width: 900px) {
+
+    .divAllAboutUsOFContact{
+        flex-direction: column;
+    }
+
+    .divAllContact section:nth-child(1){ /*=== Section com o nome "Sobre Nos" ===*/  
+        font-size: 3.5vw;
+    }
+
+    .divAllAboutUs{ /*=== DIV que envovle todo o meu componente "AboutUS" ===*/
+        width: 100%;
+        padding-bottom: 5%;
+    }
+
+    .divAllAboutUs section:nth-child(1){ /*=== Section com o nome "Sobre Nos" ===*/  
+        font-size: 2.5vw;
+    }
+    
+    .secAboutUsText{ /*=== Section Do Texto e do Botão ===*/
+        font-size: 2.5vw; 
+    }
+    
+    .titleNameAboutUs{ /*=== Titulo "AmateurX" ===*/
+        font-size: 3vw; 
+    }
+
+    .secAboutUsText p{ /*=== tag P com o texto ===*/
+        font-size: 2vw;
+        line-height: 1.7;
+    }
+
+    .divAllContact{ /*=== DIV que envovle todo o meu componente "AboutUS" ===*/
+        width: 100%;
+    }
+
+    .divCarouselContainer { /*=== Div que engloba todo o Carrosel ===*/
+        width: 50%;
+    }
+
+    .carouselImage {
+        width: 100%;
+        height: 20vw; 
+    }
+
+}
+    
+/*===================================================FUNCIONAMENTO EM MOBILE================================================*/
+    
+@media (max-width: 500px) {
+
+    .divAllContact section:nth-child(1){ /*=== Section com o nome "Sobre Nos" ===*/  
+        font-size: 3.5vw;
+    }
+
+    .divBtnContent{
+        gap: 2.5vw;
+    }
+
+}
+  
+
+  
+  
+  
+  

@@ -1,0 +1,342 @@
+.divCreateGuild{ /*=== Estilo que engloba Todo Componente CreateGuild ===*/
+    background-color: rgba(20, 20, 28, 0.75);
+    width: 75%;
+    height: 75%;
+    margin-top: 5%;
+    border-width: 5px;
+    border-style: solid;
+    border-image: linear-gradient(to right, red 50%, lightblue 50%) 1;
+    overflow: hidden;
+}
+
+.alignOneCreateGuild{ /*=== div que alinha o botao de voltar e o texto ===*/
+    height: 15%;
+}
+
+.btnbackCreateGuild{ /*=== Estilo Do Botao Para Voltar ===*/
+   background-color: transparent;
+   border: none;
+   color: white; 
+   font-size: 1.3vw;
+   margin: 1%;
+   display: flex;
+   align-items: center;
+   text-shadow: 
+    -1px -1px 0 #94bcdc,  
+    1px -1px 0 #94bcdc,
+    -1px 1px 0 #94bcdc,
+    1px 1px 0 #94bcdc;
+}
+
+.divCreateGuild h1{ /*=== Estilo Do Texto (Crie sua Guilda) ===*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 2%;
+    font-size: 2vw;
+    text-shadow: 
+    -1px -1px 0 #94bcdc,  
+    1px -1px 0 #94bcdc,
+    -1px 1px 0 #94bcdc,
+    1px 1px 0 #94bcdc;
+}
+
+.divAlignCreateGuildLarge{ /*=== div que engloba o Conteudo Da Criaçao Em (Large) ===*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+}
+
+.divAlignCreateGuildSmall{ /*=== div que engloba o Conteudo Da Criaçao Em (Small) ===*/
+    display: none;
+}
+
+.secBoxSelectedindex{ /*=== seçao das caixas de criaçao ===*/
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.secBoxSelectedindex h3{ /*=== texto Que Indica oque é as caixas ===*/
+    color: white;
+    font-size: 1.3vw;
+}
+
+.secBoxSelectedindex div{ /*=== div que contem o estilo das Caixas ===*/
+    width: 80%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #343c44;
+    border-width: 2.5px;
+    border-style: solid;
+    border-image: linear-gradient(to right, red 50%, lightblue 50%) 1;
+}
+
+.cameraIcon{ /*=== svg que contem a camera para escolha da foto ===*/
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.guildNameInput{ /*=== input para escolher o Nome Da guilda ===*/
+    width: 75%;
+    height: 20%;
+    padding: 10px;
+    margin-top: 28%;
+    font-size: 1vw;
+    border: 1px solid #94bcdc;
+    border-radius: 5px;
+    background-color: #101c24;
+    color: white;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.guildDescriptionTextarea { /*=== TextArea para escolher a descriçao Da guilda ===*/
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #94bcdc;
+    border-radius: 5px;
+    background-color: #101c24;
+    color: white;
+    outline: none;
+    resize: none; /* Isso desabilita o redimensionamento */
+}
+
+.alignBtnCreateGuilda{ /*=== seçao que engloba os erros, botao e carregamento ===*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    height: 25%;
+    gap: 5px;
+}
+
+.btnCreateGuilda{ /*=== botao de criaçao da guilda ===*/
+    background-color: #ff073a;
+    border: solid 1px white;
+    width: 13vw;
+    height: 3vw;
+    color: white;
+    font-size: 1.2vw;
+    border-radius: 15px;
+}
+
+.tagPErrorCreateGuild{ /*=== tag para error ===*/
+    color: #ff073a;
+    font-size: 1.2vw;
+}
+
+.tagPSuccessCreateGuild{ /*=== tag para sucesso ===*/
+    color: green;
+    font-size: 1.2vw;
+}
+
+
+.loading-dots { /*=== div do carregamento ===*/
+    display: inline-block;
+    font-size: 1.5vw;
+    color: white;
+}
+
+.loading-dots span { /*=== ponto do carregamnto ===*/
+    display: inline-block;
+    animation: bounce 1.5s infinite;
+}
+
+.loading-dots span:nth-child(1) { /*=== ponto do carregamnto ===*/
+    animation-delay: 0s;
+}
+
+.loading-dots span:nth-child(2) { /*=== ponto do carregamnto ===*/
+    animation-delay: 0.2s;
+}
+
+.loading-dots span:nth-child(3) { /*=== ponto do carregamnto ===*/
+    animation-delay: 0.4s;
+}
+
+@keyframes bounce { /*=== animaçao do carregamnto ===*/
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+/*===================================================FUNCIONAMENTO EM NOTEBOOKS ================================================*/
+
+@media (max-width: 1200px) {
+
+    .btnbackCreateGuild{ /*=== Estilo Do Botao Para Voltar ===*/
+        font-size: 2vw;
+     }
+     
+     .divCreateGuild h1{ /*=== Estilo Do Texto (Crie sua Guilda) ===*/
+         font-size: 4vw;
+     }
+
+     .divCreateGuild{ /*=== div que engloba o Conteudo Da Criaçao Em (Large) ===*/
+        width: 90%;
+        height: 75%;
+    }
+
+     .secBoxSelectedindex h3{ /*=== texto Que Indica oque é as caixas ===*/
+        font-size: 2.5vw;
+    }
+
+    .cameraIcon{ /*=== svg que contem a camera para escolha da foto ===*/
+        padding: 5%;
+    }
+
+    .guildNameInput{ /*=== input para escolher o Nome Da guilda ===*/
+        font-size: 1.5vw;
+    }
+
+    .btnCreateGuilda{ /*=== botao de criaçao da guilda ===*/
+        width: 20vw;
+        height: 4vw;
+        font-size: 2.5vw;
+    }
+    
+    .tagPErrorCreateGuild{ /*=== tag para error ===*/
+        font-size: 2vw;
+    }
+    
+    .tagPSuccessCreateGuild{ /*=== tag para sucesso ===*/
+        font-size: 2vw;
+    } 
+    
+    .loading-dots { /*=== div do carregamento ===*/
+        font-size: 2.3vw;
+    }
+
+}
+
+/*===================================================FUNCIONAMENTO EM Tablets ================================================*/
+
+@media (max-width: 900px) {
+    
+    .divAlignCreateGuildLarge{ /*=== div que engloba o Conteudo Da Criaçao Em (Large) ===*/
+        display: none;
+    }
+
+    .divAlignCreateGuildSmall{ /*=== div que engloba o Conteudo Da Criaçao Em (Small) ===*/
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btnbackCreateGuild{ /*=== Estilo Do Botao Para Voltar ===*/
+        font-size: 4vw;
+     }
+     
+     .divCreateGuild h1{ /*=== Estilo Do Texto (Crie sua Guilda) ===*/
+         font-size: 6vw;
+     }
+
+    .carouselGuildCreateContainer { /*=== Div que engloba todo o Carrosel ===*/
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        height: 350px;
+        width: 100%;
+    }
+    
+    .carouselGuildCreateItem { /*=== section dos intems dos carrosel ===*/
+        min-width: 100%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .carouselGuildCreateItem h3{ /*=== texto Que Indica oque é as caixas ===*/
+        color: white;
+        font-size: 5vw;
+    }
+
+    .carouselGuildCreateItem div{ /*=== div que contem o estilo das Caixas ===*/
+        width: 80%;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        background-color: #343c44;
+        border-width: 2.5px;
+        border-style: solid;
+        border-image: linear-gradient(to right, red 50%, lightblue 50%) 1;
+    }
+    
+    .divCarouselBtns { /*=== div que contem os botoes do carrosel ===*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5%;
+        gap: 5%;
+    }
+
+    .btnCarousel {
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+    }
+
+    .btnCarousel svg {
+        color: #94bcdc;
+        font-size: 5vw;
+    }
+    
+    .divCaroselSpans{
+        display: flex;
+        gap: 10px;
+    }
+
+    .divCaroselSpans span {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background-color: #ccc;
+        border-radius: 50%;
+        transition: background-color 0.3s ease;
+    }
+    
+    .divCaroselSpans span.active {
+        background-color: gray; /* Cor do indicador ativo */
+    }
+    
+    .btnCreateGuilda{ /*=== botao de criaçao da guilda ===*/
+        width: 30vw;
+        height: 8vw;
+        font-size: 3.7vw;
+        margin-bottom: 5%;
+    }
+
+    .guildNameInput{ /*=== input para escolher o Nome Da guilda ===*/
+        font-size: 4vw;
+    }
+    
+
+}
+
+/*===================================================FUNCIONAMENTO EM MOBILE================================================*/
+
+@media (max-width: 500px) {
+
+    .divCreateGuild h1{ /*=== Estilo Do Texto (Crie sua Guilda) ===*/
+        font-size: 7vw;
+        margin-top: 7.5%;
+    }
+
+}

@@ -1,0 +1,193 @@
+.divAllCompAdmin{ /*=== div que engloba todo componetne CompAdmin ===*/
+    height: 100%;
+    overflow: hidden;
+}
+
+
+
+.divContentCompAdmin{ /*=== div filho que engloba o meio do componente compAdmin ===*/
+    height: 92.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 1%;
+}
+
+.divChildContentCompAdmin{ /*=== div Filho que engloba os card e o botão ===*/
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    align-items: center;
+    overflow: hidden;
+}
+
+.compAdminCard{ /*=== div que engloba os card e o botão ===*/
+    width: 25%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.cardContentCompAdmin{ /*=== div do card ===*/
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
+.cardContentCompAdmin img { /*=== img do card ===*/
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-width: 2.5px;
+    border-style: solid;
+    border-image: linear-gradient(to right, red 50%, lightblue 50%) 1;
+    transition: 0.1s;
+}
+
+.cardContentCompAdmin img:hover{ /*=== img do card ===*/
+    transform: scale(1.1);
+    border-width: 3px;
+    transition: 0.4s;
+}
+
+.leftButton { /*=== botoes de passar o carrosel do card ===*/
+    left: 5px;
+}
+  
+.rightButton { /*=== botoes de passar o carrosel do card ===*/
+    right: 5px;
+}
+
+.textStyleDontEquipe, .textStyleNumberPlayerComp { /*=== texto quando a comp nao existe, e do numero dos jogadores. ===*/
+    color: black;
+    text-shadow: 
+    -1px -1px 0 #94bcdc,  
+    1px -1px 0 #94bcdc,
+    -1px 1px 0 #94bcdc,
+    1px 1px 0 #94bcdc;
+    font-size: 2vw;
+}
+
+.buttonAddDivCreateComp{ /*=== botao para criar uma nova competiçao ===*/
+    width: 5vw;
+    height: 5vw;
+    font-size: 5vw;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;   
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divAllContentCreateComp{ /*=== div que engloba toda a criaçao da competiçao ===*/
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
+    width: 90%;
+    height: 90%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.75);
+    border: solid 1px white;
+    border-radius: 5%;
+    padding-left: 2%;
+    padding-top: 1%;
+}
+
+.btnBackDivCreateComp{ /*=== botao voltar ===*/
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 1vw;
+}
+
+.divAllContentCreateComp section h1{ /*=== Texto para criaçao da competiçao ===*/
+    font-size: 2vw;
+    color: #ff073a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 
+    -1px -1px 0 #94bcdc,  
+    1px -1px 0 #94bcdc,
+    -1px 1px 0 #94bcdc,
+    1px 1px 0 #94bcdc;
+}
+
+.formDivContentTwo { /*=== formulario div que separa em 2 colunas horizontal ===*/
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    margin-top: 1.5%;
+    gap: 2%;
+}
+
+.formDivContentTwo select,
+.formDivContentTwo input{ /*=== estilo dos inputs e selects ===*/
+    width: 39%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formDivSelectedPhoto{ /*=== div que enbloba a foto escolhida e a descriçao ===*/
+    border-radius: 5%;
+    border: solid 1px white;
+    width: 30%;
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.formDivSelectedPhoto textarea{ /*=== textares estilo ===*/
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    color: white;
+    font-size: 1.5vw;
+    padding: 1%;
+    background-color: transparent;
+}
+
+.formDivSelectedPhoto label svg{ /*=== svg para escolher a foto ===*/
+    width: 100%;
+    height: 100%;
+    color: #94bcdc;
+}
+
+.error-message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+    margin-top: 2%;
+    color: rgba(255, 0, 0, 0.8);
+}
+
+.btnCreateComp{ /*=== botao para criar equipe ===*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    top: 10px;
+    position: relative;
+    height: 3vw;
+    width: 15vw;
+    border-radius: 20px;
+    color: white;
+    background-color: #ff073a;
+    border: solid 1px white;
+    margin: auto;
+}
+
+

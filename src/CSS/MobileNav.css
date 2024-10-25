@@ -1,0 +1,75 @@
+.divAllMobileNav {
+    display: none;   
+}
+
+/*===================================================FUNCIONAMENTO EM Tablets ================================================*/
+
+@media (max-width: 900px) {
+    .divAllMobileNav {
+        position: fixed;
+        display: flex;
+        width: 100%;
+        bottom: 0;
+        height: 7vh;
+        background-color: #14141c;
+        border-bottom: solid 1px rgba(255, 255, 255, 0.25);
+        z-index: 900;
+    }
+
+
+    .secMobileNavAlignAnchor{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5vw;
+    }
+
+    .anchorHeaderOnStyle{
+        width: 6vw;
+        height: 6vw;
+        font-size: 4vw;
+    }
+
+    .anchorHeaderOffStyle{
+        width: 5.5vw;
+        height: 5.5vw;
+        font-size: 3.5vw;
+    }
+}
+    
+/*===================================================FUNCIONAMENTO EM MOBILE================================================*/
+    
+@media (max-width: 500px) {
+    .divAllMobileNav {
+        position: fixed;
+        display: flex;
+        width: 100%;
+        bottom: 0;
+        height: 7vh;
+        background-color: #14141c;
+        border-top: solid 1px rgba(255, 255, 255, 0.25);
+        z-index: 900;
+    }
+
+    .secMobileNavAlignAnchor{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5vw;
+    }
+    .anchorHeaderOnStyle{
+        width: 6vw;
+        height: 6vw;
+        font-size: 4vw;
+    }
+
+    .anchorHeaderOffStyle{
+        width: 5.5vw;
+        height: 5.5vw;
+        font-size: 3.5vw;
+    }
+}

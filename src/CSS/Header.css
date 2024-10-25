@@ -1,0 +1,215 @@
+.headerStyle { /*=== Estilo que engloba o Layout Header ===*/
+  position: fixed;
+  display: flex;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 8vh;
+  background-color: #14141c;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.25);
+  justify-content: space-between;
+}
+  
+.secHeaderAlignOne, .secHeaderAlignSingUp{ /*=== Alinhamento das divs, SecOne e Entrada e Cadastro pelo Header ===*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5vw;
+  width: 25%;
+}
+.secHeaderAlignAnchor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5vw;
+  width: 25%;
+}
+
+.imgLogoOficial{ /*=== Estilo do Logo Tipo*/
+  width: 2.5vw;
+  height: 2.5vw;
+  border: solid 1px #94bcdc;
+  border-radius: 50px;
+}
+    
+.titleAX{ /*=== Estilo Do Nome AmateurX ===*/
+  font-family: "Bungee", sans-serif;
+  font-size: 1.3vw; 
+  text-align: center;
+  color: #ff073a;
+  text-shadow: 
+  -1px -1px 0 #94bcdc,  
+  1px -1px 0 #94bcdc,
+  -1px 1px 0 #94bcdc,
+  1px 1px 0 #94bcdc;
+}
+
+.anchorHeaderOnStyle{ /*=== Estilo Do Botao Anchor Ativo ===*/
+  background-color: black;
+  color: white;
+  border: solid 1px #94bcdc;
+  font-size: 1.4vw;
+  width: 2vw;
+  height: 2vw;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(45deg);
+}
+
+.anchorHeaderOffStyle{ /*=== Estilo Do Botao Ancota Desativado ===*/
+  background-color: black;
+  color: wheat;
+  border: solid 1px #94bcdc93;
+  font-size: 1.1vw;
+  width: 1.7vw;
+  height: 1.7vw;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(45deg); 
+}
+
+.anchorHeaderOffStyle:hover{ /*=== Estilo Do Botao Ancota Desativado ===*/
+  transform: rotate(45deg) scale(1.1);
+  border: solid 1px #94bcdc;
+  color: white;
+  transition: transform 0.1s ease-in-out;
+}
+
+.anchorHeaderOnStyle svg, .anchorHeaderOffStyle svg{ /*=== Estilo Do Svg Ancota Desativado e Ativado ===*/
+  transform: rotate(-45deg);
+}
+  
+.btnSupport{ /*=== Botão Do Suporte ===*/
+  border: none;
+  width: 2.2vw;
+  height: 2.2vw;
+  font-size: 1.5vw;
+  border-radius: 10px;
+  color: #94bcdc;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+    
+.btnSupport:hover { /*=== Botão Do Suporte ===*/
+  border: solid 1px white;
+  transform: scale(1.05);
+  background-color: white; 
+  color: black; 
+  border-color: black;
+}
+
+.btnEnter{ /*=== Botão Do Entre ===*/
+  background-color: #ff073a;
+  border: solid 1px white;
+  color: white;
+  border-radius: 10px;
+  font-size: 1vw;
+  width: 5.7vw;
+  height: 2.2vw;
+}
+    
+.btnEnter:hover { /*=== Botão Do Entre ===*/
+  transform: scale(1.05);
+  background-color: #ff073a;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.7); 
+  transition: box-shadow 0.3s ease;
+}
+
+/*===================================================FUNCIONAMENTO EM NOTEBOOKS ================================================*/
+  
+@media (max-width: 1200px) {
+
+  .secHeaderAlignOne, .secHeaderAlignSingUp{ /*=== Alinhamento das divs, SecOne e Entrada e Cadastro pelo Header ===*/
+    gap: 1.2vw;
+  }
+
+  .secHeaderAlignAnchor{
+    gap: 3.5vw;
+  }
+
+  .imgLogoOficial{ /*=== Estilo do Logo Tipo*/
+    width: 4.5vw;
+    height: 4.5vw;
+  }
+
+  .titleAX{ /*=== Estilo Do Nome AmateurX ===*/
+    font-size: 2vw; /* Tamanho da fonte */
+  }
+
+  .anchorHeaderOnStyle{ /*=== Estilo Do Botao Anchor Ativo ===*/
+    font-size: 2vw;
+    width: 3vw;
+    height: 3vw;
+  }
+  
+  .anchorHeaderOffStyle{ /*=== Estilo Do Botao Anchor Desativado ===*/
+    font-size: 1.7vw;
+    width: 2.5vw;
+    height: 2.5vw;
+  }
+
+  .btnSupport{ /*=== Botão Do Suporte ===*/
+    width: 3.2vw;
+    height: 3.2vw;
+    font-size: 2.5vw;
+  }
+
+  .btnEnter{ /*=== Botão Do Entre ===*/
+    font-size: 1.5vw;
+    width: 8vw;
+    height: 3.7vw;
+  }
+
+}
+  
+/*===================================================FUNCIONAMENTO EM Tablets ================================================*/
+  
+  @media (max-width: 900px) {
+    
+    .headerStyle{
+      position: absolute;
+    }
+
+    .secHeaderAlignOne, .secHeaderAlignSingUp{ /*=== Alinhamento das divs, SecOne e Entrada e Cadastro pelo Header ===*/
+      width: 40%;
+      gap: 1.2vw;
+    }
+  
+    .secHeaderAlignAnchor{
+      display: none;
+    }
+  
+    .imgLogoOficial{ /*=== Estilo do Logo Tipo*/
+      width: 8.5vw;
+      height: 8.5vw;
+    }
+  
+    .titleAX{ /*=== Estilo Do Nome AmateurX ===*/
+      font-size: 3vw; /* Tamanho da fonte */
+    }
+  
+    .btnSupport{ /*=== Botão Do Suporte ===*/
+      width: 6vw;
+      height: 6vw;
+      font-size: 4vw;
+    }
+  
+    .btnEnter{ /*=== Botão Do Entre ===*/
+      font-size: 3vw;
+      width: 13vw;
+      height: 6vw;
+    }
+  }
+  
+  /*===================================================FUNCIONAMENTO EM MOBILE================================================*/
+  
+  @media (max-width: 500px) {
+    
+
+  }

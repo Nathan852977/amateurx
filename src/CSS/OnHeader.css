@@ -1,0 +1,432 @@
+.secHeaderAlignSingUp {
+  display: flex;
+  position: relative
+}
+
+.menuUserTrue { /*=== Div do menu do Usuario Aberto ===*/
+    position: absolute;
+    top: 7vh; 
+    left: 25%; 
+    height: 25vh;
+    max-height: 20vw;
+    width: 50%;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    background-color: #20242c;
+    opacity: 0;
+    border: solid 1px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+}
+
+.menuUserTrue.menuUserFalse { /*=== Div que abre o menu do Usuario ===*/
+    max-height: 30vw;
+    opacity: 1;
+}
+
+.btnLogoutOnHeader{ /*=== Botão de Deslogar ===*/
+    background-color: #ff0739c0;
+    color: rgba(255, 255, 255, 0.7);
+    border: solid 1px rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    height: 2vw;
+    width: 8vw;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 1.2vw;
+}
+
+.btnLogoutOnHeader:hover{
+  transform: scale(1.1);
+  border-color: #94bcdc;
+}
+
+.secMidiaSociasHeaderOn{ /*=== Section das midias socias ===*/
+    justify-content: center;
+    display: flex;
+}
+
+.TitlePlayerName{ /*=== H1 que mostra o Nome do Usuario* ===*/
+  font-size: 1.3vw;
+  color: white;
+}
+  
+.btnLayoutAnside { /*=== Menu Do Usuario ===*/
+  background-color: black;
+  border: solid 1px rgb(255, 255, 255, 0.5);
+  width: 2vw;
+  height: 2vw;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.btnLayoutAnside:hover { /*=== Menu Do Usuario ===*/
+  border: solid 1px #94bcdc;
+  transform: scale(1.1);
+  box-shadow: -5px 0 15px #94bcdc;
+}
+
+.btnLayoutAnside svg {
+  color: white;
+  font-size: 1.3vw;
+  text-shadow: 
+  -1px -1px 0 #94bcdc,  
+  1px -1px 0 #94bcdc,
+  -1px 1px 0 #94bcdc,
+  1px 1px 0 #94bcdc;
+}
+
+.notificationCount {
+  position: absolute;
+  top: -5px; /* Move para o canto superior */
+  right: -5px; /* Ajusta para o lado direito */
+  background-color: red; /* Cor de fundo da notificação */
+  color: white; /* Cor do texto (número) */
+  border-radius: 50%; /* Torna a notificação circular */
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px; /* Tamanho do número */
+  font-weight: bold;
+}
+
+.contentGlobalMenuUser{ /*=== Conteudo dentro de Menu Do Usuario ===*/
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+}
+
+.contentGlobalMenuUser p{ /*=== Tag P dentro do Menu do Usuario ===*/
+  font-size: 1vw;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.divCarouselHeader{ /*=== div global do Carrosel das mensagems ===*/
+  background-color: black;
+  border: solid 1px #94bcdc;
+  padding: 1%;
+  border-radius: 15px;
+}
+
+.carouselSlideHeader{
+  margin: 5%;
+}
+
+.carouselSlideHeader h3{
+  color: white;
+  font-size: 1vw;
+  text-shadow: 
+  -1px -1px 0 #94bcdc,  
+  1px -1px 0 #94bcdc,
+  -1px 1px 0 #94bcdc,
+  1px 1px 0 #94bcdc;
+}
+
+.carouselSlideHeader p{
+  color: wheat;
+  font-size: 0.90vw;
+  line-height: 1.25;
+  text-shadow: 
+  -0px -0px 0 rgb(255, 255, 255, 0.35),  
+  1px -1px 0 rgb(255, 255, 255, 0.35),
+  -0px 0px 0 rgb(255, 255, 255, 0.35),
+  1px 1px 0 rgb(255, 255, 255, 0.35);
+}
+
+.carouselSlideHeader div{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 5%;
+  gap: 0.5vw;
+}
+
+.dotCarroselHeader {
+  height: 10px;
+  width: 10px;
+  margin: 2px;
+  background-color: gray; /* Cor padrão */
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.btnStyleDeleteMsg{
+  width: 1.5vw;
+  height: 1.5vw;
+  font-size: 1.5vw;
+  background-color: black;
+  border: solid 1px #94bcdc;
+  color: red;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnStyleAcceptMsg{
+  width: 1.5vw;
+  height: 1.5vw;
+  font-size: 1vw;
+  background-color: black;
+  border: solid 1px #94bcdc;
+  color: green;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnStyleDeleteMsg:hover, .btnStyleAcceptMsg:hover{
+  transform: scale(1.1);
+}
+
+.activeCarroselHeader {
+  background-color: blue; /* Cor para a bolinha ativa */
+}
+
+.carouselControls{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2vw;
+  padding-top: 5%;
+}
+
+.btnStylePassSlide{
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 1vw;
+}
+
+.btnStylePassSlide:hover{
+  transform: scale(1.2);
+}
+
+.conviteDontExistStyle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 45%;
+  font-size: 1.3vw;
+}
+
+/*===================================================FUNCIONAMENTO EM NOTEBOOKS ================================================*/
+
+@media (max-width: 1200px) {
+
+    .headerStyle { /*=== Estilo que engloba o Layout Header ===*/
+      height: 8vh;
+    }
+  
+    .secHeaderAlignOne, .secHeaderAlignSingUp{ /*=== Alinhamento das divs, SecOne e Entrada e Cadastro pelo Header ===*/
+      width: 30%;
+      gap: 1vw;
+    }
+
+    .menuUserTrue{
+      height: 25vh;
+    }
+
+    .contentGlobalMenuUser{ /*=== Conteudo dentro de Menu Do Usuario ===*/
+      display: flex;
+      flex-direction: column;
+      gap: 0.5vw;
+    }
+
+    .btnLogoutOnHeader{ /*=== Botão de Deslogar ===*/
+      height: 3vw;
+      width: 10vw;
+      font-size: 1.5vw;
+    }
+
+    .contentGlobalMenuUser p{ /*=== Tag P dentro do Menu do Usuario ===*/
+      font-size: 1.3vw;
+      margin-top: 10%;
+    } 
+
+    .TitlePlayerName{ /*=== H1 que mostra o Nome do Usuario* ===*/
+      font-size: 1.7vw;
+    }
+
+    .btnLayoutAnside { /*=== Menu Do Usuario ===*/
+      width: 3vw;
+      height: 3vw;
+    }
+
+    .btnLayoutAnside svg {
+      font-size: 1.7vw;
+    }
+
+    .notificationCount {
+      width: 15px;
+      height: 15px;
+      font-size: 12px; /* Tamanho do número */
+    }
+
+    .conviteDontExistStyle{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30%;
+      font-size: 1.5vw;
+    }
+
+    .carouselSlideHeader{
+      margin: 5%;
+    }
+
+    .carouselSlideHeader h3{
+      font-size: 1.3vw;
+    }
+
+    .carouselSlideHeader p{
+      font-size: 1.2vw;
+      line-height: 1.3;
+    }
+
+    .btnStyleDeleteMsg, .btnStyleAcceptMsg{
+      width: 3vw;
+      height: 2.8vw;
+      font-size: 1.8vw;
+    }
+
+    .btnStylePassSlide{
+      font-size: 1.5vw;
+    }
+    
+
+  }
+  
+  /*===================================================FUNCIONAMENTO EM Tablets ================================================*/
+  
+  @media (max-width: 900px) {
+  
+    .secHeaderAlignOne, .secHeaderAlignSingUp{ /*=== Alinhamento das divs, SecOne e Entrada e Cadastro pelo Header ===*/
+      width: 50%;
+    }
+  
+    .secHeaderAlignAnchor{ /*=== Alinhamento das divs, SecOne e Entrada e Cadastro pelo Header ===*/
+      display: none;
+    }
+
+    .menuUserTrue{
+      height: 30vh;
+    }
+
+    .btnLogoutOnHeader{ /*=== Botão de Deslogar ===*/
+      height: 5vw;
+      width: 15vw;
+      font-size: 2.5vw;
+    }
+
+    .contentGlobalMenuUser p{ /*=== Tag P dentro do Menu do Usuario ===*/
+      font-size: 2.5vw;
+      margin-top: 12%;
+    } 
+
+    .TitlePlayerName{ /*=== H1 que mostra o Nome do Usuario* ===*/
+      font-size: 3.7vw;
+    }
+
+    .btnLayoutAnside { /*=== Menu Do Usuario ===*/
+      width: 6vw;
+      height: 6vw;
+    }
+
+    .btnLayoutAnside svg {
+      font-size: 3.5vw;
+    }
+
+    .conviteDontExistStyle{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 35%;
+      font-size: 2vw;
+    }
+
+    .carouselSlideHeader h3{
+      font-size: 1.8vw;
+    }
+
+    .carouselSlideHeader p{
+      font-size: 1.7vw;
+      line-height: 1.2;
+    }
+
+    .btnStyleDeleteMsg, .btnStyleAcceptMsg{
+      width: 3.8vw;
+      height: 3.5vw;
+      font-size: 2.5vw;
+    }
+
+    .btnStylePassSlide{
+      font-size: 3vw;
+    }
+
+  }
+  
+/*===================================================FUNCIONAMENTO EM MOBILE================================================*/
+  
+@media (max-width: 500px) {
+  
+    .secHeaderAlignOne, .secHeaderAlignSingUp{ /*=== Alinhamento das divs, SecOne e Entrada e Cadastro pelo Header ===*/
+      width: 50%;
+    }
+  
+    .secHeaderAlignAnchor{ /*=== Alinhamento das divs, SecOne e Entrada e Cadastro pelo Header ===*/
+      display: none;
+    }
+
+    .menuUserTrue{
+      height: 18vh;
+    }
+
+    .conviteDontExistStyle{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30%;
+      font-size: 2.5vw;
+    }
+
+    .carouselSlideHeader h3{
+      font-size: 2vw;
+    }
+
+    .carouselSlideHeader p{
+      font-size: 2vw;
+      line-height: 1.2;
+    }
+
+    .btnStyleDeleteMsg, .btnStyleAcceptMsg{
+      width: 3.8vw;
+      height: 3.5vw;
+      font-size: 2.5vw;
+    }
+
+    .btnStylePassSlide{
+      font-size: 3vw;
+    }
+}
+
+  
+  

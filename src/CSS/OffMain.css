@@ -1,0 +1,160 @@
+.MainOffStyle{
+    background-image: url("../img//MainBackGroundOff.svg");
+    width: 100%;
+    height: 80vh;
+    background-size: cover; /* Faz a imagem cobrir todo o contêiner */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-position: center; /* Centraliza a imagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8vh;
+}
+
+.divAllMainOff{ /*=== div que envolve todo meu componente ===*/
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.MOFFalignOne, .MOFFalignTwo, .MOFFalignThree{ /*=== Estilos das 3 seçoes GLOBAL ===*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.MOFFalignOne{ /*=== Section que contem meu Slogan e o Titulo ===*/
+    flex-direction: column;
+    padding-top: 1%;
+    height: 25%;
+    color: white;
+    gap: 0.5vw;
+    font-size: 1vw;
+    line-height: 0.7;
+}
+
+.MOFFdivAlignSlogan{ /*=== div que envolve o svg e o Slogan ===*/
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+}
+
+.titleNameMOFF{ /*=== Estilo do Titulo "AmateurX" ===*/ 
+    font-family: "Bungee", sans-serif;
+    font-size: 4vw; 
+    color: #ff073a;
+    text-shadow: 
+    -1px -1px 0 #94bcdc,  
+    1px -1px 0 #94bcdc,
+    -1px 1px 0 #94bcdc,
+    1px 1px 0 #94bcdc;
+}
+
+.MOFFalignOne svg{ /*=== svg do Slogan ===*/
+    color: gold;
+}
+
+.MOFFalignTwo{ /*=== Section que envolve o botao cadastre-se ===*/
+    width: 50%;
+    height: 60%;
+    position: relative;
+    align-items: end;
+    text-align: center; 
+}
+
+.MOFFalignThree{
+    height: 15%;
+    position: relative;
+}
+
+.imgMOFFStyle{
+    width: 50%;
+    height: 100%;
+}
+
+.btnCadastreSe{ /*=== Botao "Cadastre-se" ===*/
+    background-color: #ff073a;
+    border: solid 1px white;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.2vw;
+    width: 12vw;
+    height: 3.5vw;
+}
+
+.btnCadastreSe:hover{ /*=== Botao "Cadastre-se" ===*/
+    transform: scale(1.05);
+    background-color: #ff073a;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.7); 
+    transition: box-shadow 0.3s ease;
+}
+
+/*===================================================FUNCIONAMENTO EM NOTEBOOKS ================================================*/
+  
+@media (max-width: 1200px) {
+
+    .MainOffStyle{
+        width: 100%;
+        height: auto;
+        object-fit: cover; /* Mantém o aspecto da imagem sem distorção */
+        aspect-ratio: 16 / 9; /* Mantém o aspect ratio 16:9 */
+    }
+
+    .titleNameMOFF{ /*=== Estilo do Titulo "AmateurX" ===*/ 
+        font-size: 5vw; 
+    }
+    
+    .MOFFalignOne{ /*=== Section que contem meu Slogan e o Titulo ===*/
+        font-size: 1.2vw;
+    }
+
+    .btnCadastreSe{ /*=== Botao "Cadastre-se" ===*/
+        font-size: 1.8vw;
+        width: 16vw;
+        height: 5vw;
+    }
+
+
+}    
+/*===================================================FUNCIONAMENTO EM Tablets ================================================*/
+    
+@media (max-width: 900px) {
+
+    .titleNameMOFF{ /*=== Estilo do Titulo "AmateurX" ===*/ 
+        font-size: 5.5vw; 
+    }
+    
+    .MOFFalignOne{ /*=== Section que contem meu Slogan e o Titulo ===*/
+        font-size: 1.4vw;
+    }
+
+    .btnCadastreSe{ /*=== Botao "Cadastre-se" ===*/
+        font-size: 2.3vw;
+        width: 20vw;
+        height: 6vw;
+    }
+}
+    
+/*===================================================FUNCIONAMENTO EM MOBILE================================================*/
+    
+@media (max-width: 500px) {
+
+    .titleNameMOFF{ /*=== Estilo do Titulo "AmateurX" ===*/ 
+        font-size: 6vw; 
+    }
+    
+    .MOFFalignOne{ /*=== Section que contem meu Slogan e o Titulo ===*/
+        width: 75%;
+        font-size: 1.8vw;
+    }
+
+    .btnCadastreSe{ /*=== Botao "Cadastre-se" ===*/
+        font-size: 2.5vw;
+        width: 22.5vw;
+        height: 6.5vw;
+    }
+  
+}

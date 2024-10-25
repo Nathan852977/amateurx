@@ -1,0 +1,39 @@
+.divAllComp{
+    height: 100%;
+    width: 100%;
+}
+
+.divAnchorComp{ /*=== div que engloba as tag ancora ===*/
+    height: 7.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+  
+.anchorCompDesable{ /*=== tag ancora desativada ===*/
+    color: white;
+    text-decoration: none;
+    font-size: 2.5vw;
+}
+  
+.anchorCompDesable:hover,
+.anchorCompActive:hover{ /*=== tag ancora hover ===*/
+    transform: scale(1.1);
+    text-shadow: 
+    -1px -1px 0 #94bcdc,  
+    1px -1px 0 #94bcdc,
+    -1px 1px 0 #94bcdc,
+    1px 1px 0 #94bcdc;
+}
+  
+.anchorCompActive{ /*=== tag ancora ativada ===*/
+    text-decoration: none;
+    font-size: 3vw;
+    color: #ff073a;
+    text-shadow: 
+    -1px -1px 0 #94bcdc,  
+    1px -1px 0 #94bcdc,
+    -1px 1px 0 #94bcdc,
+    1px 1px 0 #94bcdc;
+}

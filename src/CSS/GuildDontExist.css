@@ -1,0 +1,217 @@
+.divGlobalEquipeDontExist { /*=== div que engloba o layout do usuario sem guilda ===*/
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.divEquipeDontExist{ /*=== divChild que engloba o layout do usuario sem guilda ===*/
+    background-color: rgba(20, 20, 28, 0.75);
+    width: 75%;
+    height: 80%;
+    margin-top: 2.5%;
+    border-width: 5px;
+    border-style: solid;
+    border-image: linear-gradient(to right, red 50%, lightblue 50%) 1;
+    overflow: hidden;
+}
+
+.imgEquipeGuild{ /*=== imagem do usuario sem guilda ===*/
+    display: flex;
+    width: 30vw;
+    margin: auto;
+}
+
+.waveDiv { /*=== div circular que engloba o conteudo ===*/
+    width: 100%;
+    height: 100%;
+    background-color: rgb(27, 16, 16);
+    border-radius: 100% / 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    bottom: 10vw;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.5),
+    0 10px 20px -5px rgba(173, 216, 230, 0.5) inset,
+    0 10px 20px -5px rgba(255, 0, 0, 0.5) inset;
+}
+
+.waveDiv h2{ /*=== h2 do titulo ===*/
+    color: white;
+    font-size: 1.8vw;
+    margin-top: 2vw;
+    text-shadow: 
+    -1px -1px 0 #94bcdc,  
+    1px -1px 0 #94bcdc,
+    -1px 1px 0 #94bcdc,
+    1px 1px 0 #94bcdc;
+    text-align: center;
+}
+
+.waveDiv p{ /*=== tag p, da frase ===*/
+    color: white;
+    font-size: 1vw;
+    margin-top: 0.8vw;
+    text-align: center;
+    width: 60%;
+    line-height: 1.4;
+    font-family: "Lora", serif;
+}
+
+.divAlignBtnEquipe{ /*=== div que engloba os botoes ===*/
+    display: flex;
+    margin-top: 2%;
+    gap: 25px;
+}
+
+.btnEnterEquipe{ /*=== botao entre em uma equipe ===*/
+    background-color: #ff073a;
+    border: solid 1px white;
+    width: 10vw;
+    height: 2.5vw;
+    color: white;
+    font-size: 0.8vw;
+    border-radius: 15px;
+}
+
+.btnEnterEquipe:hover{ /*=== botao entre em uma equipe ===*/
+    transform: scale(1.1);
+}
+
+.btnCreateEquipe{ /*=== botao crie uma equipe ===*/
+    background-color: #94bcdc;
+    border: solid 1px white;
+    width: 10vw;
+    height: 2.5vw;
+    color: white;
+    font-size: 0.8vw;
+    border-radius: 15px;
+}
+
+.btnCreateEquipe:hover{ /*=== botao crie uma equipe ===*/
+    transform: scale(1.1);
+}
+
+/*===================================================FUNCIONAMENTO EM Desktop ================================================*/
+
+@media (max-width: 1600px) {
+
+    .imgEquipeGuild{ /*=== imagem do usuario sem guilda ===*/
+        width: 40vw;
+    }
+
+    .waveDiv { /*=== div circular que engloba o conteudo ===*/
+        bottom: 15vw;
+    }
+
+}
+
+/*===================================================FUNCIONAMENTO EM NOTEBOOKS ================================================*/
+
+@media (max-width: 1200px) {
+
+    .divEquipeDontExist{ /*=== divChild que engloba o layout do usuario sem guilda ===*/
+        height: 60%;
+        margin-top: 10%;
+    }
+
+    .imgEquipeGuild{ /*=== imagem do usuario sem guilda ===*/
+        width: 45vw;
+    }
+
+    .waveDiv { /*=== div circular que engloba o conteudo ===*/
+        bottom: 35%;
+    }
+
+    .waveDiv h2{ /*=== h2 do titulo ===*/
+        font-size: 2.5vw;
+        margin-top: 7%;
+    }
+
+    .waveDiv p{ /*=== tag p, da frase ===*/
+        font-size: 1.5vw;
+        line-height: 1.5;
+    }
+
+    .btnEnterEquipe, .btnCreateEquipe{ /*=== botoes entre e crie uma equipe ===*/
+        width: 15vw;
+        height: 3.5vw;
+        font-size: 1.6vw;
+    }
+
+}
+
+/*===================================================FUNCIONAMENTO EM Tablets ================================================*/
+
+@media (max-width: 900px) {
+
+    .divEquipeDontExist{ /*=== divChild que engloba o layout do usuario sem guilda ===*/
+        height: 55%;
+        width: 80%;
+        margin-top: 20%;
+    }
+
+    .imgEquipeGuild{ /*=== imagem do usuario sem guilda ===*/
+        width: 60vw;
+    }
+
+    .waveDiv { /*=== div circular que engloba o conteudo ===*/
+        bottom: 15vw;
+        border-radius: 100% / 100px;
+    }
+
+    .waveDiv h2{ /*=== h2 do titulo ===*/
+        font-size: 3.5vw;
+        margin-top: 7.5%;
+    }
+
+    .waveDiv p{ /*=== tag p, da frase ===*/
+        font-size: 2.2vw;
+        width: 80%;
+        line-height: 1.5;
+    }
+
+    .btnEnterEquipe, .btnCreateEquipe{ /*=== botoes entre e crie uma equipe ===*/
+        width: 20vw;
+        height: 4.5vw;
+        font-size: 2vw;
+    }
+
+}
+
+/*===================================================FUNCIONAMENTO EM MOBILE================================================*/
+
+@media (max-width: 500px) {
+
+    .divEquipeDontExist{ /*=== divChild que engloba o layout do usuario sem guilda ===*/
+        height: 55%;
+        width: 80%;
+        margin-top: 25%;
+    }
+
+    .imgEquipeGuild{ /*=== imagem do usuario sem guilda ===*/
+        width: 70vw;
+    }
+
+    .waveDiv { /*=== div circular que engloba o conteudo ===*/
+        bottom: 25vw;
+        border-radius: 100% / 75px;
+    }
+
+    .waveDiv h2{ /*=== h2 do titulo ===*/
+        font-size: 4vw;
+        margin-top: 8%;
+    }
+
+    .waveDiv p{ /*=== tag p, da frase ===*/
+        font-size: 2.5vw;
+        width: 70%;
+        line-height: 1.55;
+    }
+    .btnEnterEquipe, .btnCreateEquipe{ /*=== botoes entre e crie uma equipe ===*/
+        width: 25vw;
+        height: 6vw;
+        font-size: 2.5vw;
+    } 
+}

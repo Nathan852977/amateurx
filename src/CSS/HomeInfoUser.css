@@ -1,0 +1,342 @@
+.divAllHomeInfoUser{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.divAllHomeInfoUser section:nth-child(1){ /*=== Div que engloba Primeira Section ===*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.8);
+    margin-top: 5%;
+}
+
+.divCrendecionsOne{ /*=== div que engloba o header do infoUser ===*/
+    width: 100%;
+    height: 7.5%;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #14141c;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+}
+
+.divCrendecionsOne button{ /*=== estilo do botao de configuraçao ===*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: #94bcdc;
+    background-color: transparent;
+    font-size: 1.5vw;
+    height: 100%;
+    width: 5%;
+}
+
+.divCrendecionsOne button:hover{ /*=== estilo do botao de configuraçao ===*/
+    transform: scale(1.1);
+    color: #007bff;
+}
+
+.divCrendecionsTwo{ /*=== div qu engloba o main do infoUser ===*/
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    align-items: center;
+    background-color: #343c44;
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+}
+ 
+.imgFotoUser{ /*=== div qu engloba o main do infoUser ===*/
+    margin-left: 1%;
+    width: 20vw;
+}
+
+.divCardEstatisticas{ /*=== div qu engloba o card dos KD/V/D ===*/
+    display: flex;
+    justify-content: center;
+    margin-left: 5vw;
+    gap: 15px;
+}
+
+
+.cardEstatisticas{ /*=== div dos cards ===*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-right: solid 1px #94bcdc;
+    padding-right: 15px;
+    width: 100%;
+}
+
+.cardEstatisticas svg{
+    color: #94bcdc;
+    font-size: 7vw;
+    margin-bottom: 20%;
+}
+
+.cardEstatisticas h3{
+    color: white;
+    font-size: 1.5vw;   
+}
+
+.cardEstatisticas p{
+    color: white;
+    font-size: 1.5vw;
+}
+
+.divCrendecionsThree{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #14141c;
+}
+
+.imgLogoCrendecionsOne{
+    width: 12vw;
+    padding: 1%;
+}
+
+.divInfoCompActives{
+    border-left: solid 1px #ccc;
+    border-right: solid 1px #ccc;
+    height: 90%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 35%;
+}
+
+.divInfoCompActives h3 {
+    color: white;
+    font-size: 1vw;
+    margin-top: 2%;
+}
+
+.divInfoCompActives section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 1vw;
+    width: 100%;
+    height: 100%;
+}
+
+.divInfoCompActives section button{
+    background-color: #ff073a;
+    border: solid 1px white;
+    color: white;
+    border-radius: 10px;
+    font-size: 0.8vw;
+    margin-top: 5%;
+    width: 70%;
+    height: 2vw;
+}
+
+.divInfoCompActives section button:hover{
+    transform: scale(1.1);
+}
+
+.modalCampeonatoContent{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 20, 28, 0.6);
+    border-width: 2.5px;
+    border-style: solid;
+    border-image: linear-gradient(to right, red 50%, lightblue 50%) 1;
+}
+
+.alignOneContentCampeonato{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnDesistir {
+    background-color: #ff073a;
+    border: solid 1px white;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.2vw;
+    width: 8vw;
+    height: 2vw;
+    margin: 1%;
+}
+
+.alignTwoContentCampeonato{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    font-size: 1vw;
+}
+
+.alignTwoContentCampeonato h1{
+    font-family: "Bungee", sans-serif;
+    font-size: 2vw; 
+    color: #ff073a;
+    text-shadow: 
+    -1px -1px 0 #94bcdc,  
+    1px -1px 0 #94bcdc,
+    -1px 1px 0 #94bcdc,
+    1px 1px 0 #94bcdc;
+}
+
+.playersList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 colunas */
+    height: 100%;
+    max-height: 80%; /* Ajuste conforme necessário */
+    overflow-y: auto; /* Ativa a rolagem quando necessário */
+    scrollbar-width: thin; /* Estiliza a barra de rolagem no Firefox */
+    gap: 10px; /* Ajuste este valor para reduzir o espaço entre as colunas */
+}
+
+.playerCard{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    background-color: #0c1c24;
+    color: white;
+    border: solid 1px rgba(255, 255, 255, 0.5); 
+    border-radius: 25px;
+    font-size: 1.5vw; 
+}
+  
+
+/*===================================================FUNCIONAMENTO EM NOTEBOOKS ================================================*/
+
+@media (max-width: 1200px) {
+
+    .divAllHomeInfoUser section:nth-child(1){ /*=== Div que engloba Primeira Section ===*/
+        width: 80%;
+    }
+
+    .divCrendecionsOne{ /*=== div que engloba o header do infoUser ===*/
+        height: 15%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    .divCrendecionsTwo{ /*=== div qu engloba o main do infoUser ===*/
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    .divCrendecionsThree{
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    .imgLogoCrendecionsOne{
+        width: 15vw;
+    }
+    
+    .divInfoCompActives{
+        height: 100%;
+        width: 25%;
+        left: 30%;
+    }
+    
+    .divInfoCompActives h3, .divInfoCompActives section, .alignTwoContentCampeonato{
+        font-size: 1.5vw;
+    }
+    
+    .divInfoCompActives section button{
+        font-size: 1.3vw;
+        width: 80%;
+        height: 3.2vw;
+    }
+
+    .btnDesistir {
+        font-size: 2.5vw;
+        width: 12.5vw;
+        height: 3.5vw;
+    }
+
+    .alignTwoContentCampeonato h1{
+        font-size: 3vw; 
+    }
+    
+    .playerCard{
+        width: 80%;
+        height: 55%;
+        font-size: 1.8vw; 
+    }
+    
+}
+
+/*===================================================FUNCIONAMENTO EM Tablets ================================================*/
+
+@media (max-width: 900px) {
+
+    .divAllHomeInfoUser section:nth-child(1){ /*=== Div que engloba Primeira Section ===*/
+        width: 80%;
+        height: 100%;
+    }
+
+    .divInfoCompActives{
+        height: 15vw;
+    }
+    
+    .divInfoCompActives h3, .divInfoCompActives section {
+        font-size: 2vw;
+    }
+    
+    .divInfoCompActives section button{
+        font-size: 1.7vw;
+        width: 90%;
+        height: 4vw;
+    }
+
+    .btnDesistir {
+        font-size: 3vw;
+        width: 20vw;
+        height: 4.5vw;
+    }
+
+    .alignTwoContentCampeonato h1{
+        font-size: 4vw; 
+    }
+
+    .alignTwoContentCampeonato{
+        font-size: 2vw;
+    }
+    
+    .playerCard{
+        width: 80%;
+        height: 50%;
+        font-size: 2.5vw; 
+    }
+}
+
+/*===================================================FUNCIONAMENTO EM MOBILE================================================*/
+
+@media (max-width: 500px) {
+
+    .divInfoCompActives{
+        height: 20vw;
+    }
+
+    .divInfoCompActives section button{
+        margin-top: 15%;
+        height: 5vw;
+    }
+}
